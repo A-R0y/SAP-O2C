@@ -1,5 +1,17 @@
 # SAP Order-to-Cash (O2C) Dashboard — Capstone Project
 
+PERSONAL DETAILS
+Title:       SAP Order-to-Cash (O2C) Full-Stack Integration Dashboard
+Subtitle:    A Capstone Project in Enterprise Application Development
+Submitted by: Aditya Roy
+Roll Number:  2305998
+Institution:  KIIT Deemed to be University
+Department:   Computer Science Engineering
+Course:       B.Tech
+Academic Year:[2025–2026]
+Date:         17/04/2026
+
+
 A full-stack web application that simulates and visualizes the SAP Order-to-Cash
 business process using a Node.js/Express mock backend and a React/Vite frontend.
 
