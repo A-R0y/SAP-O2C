@@ -1,0 +1,28 @@
+{
+  "name": "sap-o2c-mock-backend",
+  "version": "1.0.0",
+  "description": "Mock SAP ECC/S4HANA OData REST API for Order-to-Cash Capstone",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^8.1.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "sap",
+    "o2c",
+    "express",
+    "mock",
+    "odata"
+  ],
+  "author": "Capstone Project",
+  "license": "MIT"
+}

@@ -1,0 +1,78 @@
+/* =====================================================
+   SAP O2C Dashboard — Global Styles
+   Aesthetic: Industrial / Enterprise Precision
+   Palette: Deep navy, warm white, SAP-blue accents
+   ===================================================== */
+
+:root {
+  --bg-primary:    #0a0e1a;
+  --bg-card:       #111827;
+  --bg-card-hover: #1a2236;
+  --bg-input:      #0d1424;
+  --border:        #1e2d45;
+  --border-bright: #2a4a7f;
+
+  --text-primary:  #e8edf5;
+  --text-secondary:#8a9ab5;
+  --text-muted:    #4a5a72;
+
+  --accent-blue:   #1c6ef3;
+  --accent-cyan:   #00c8ff;
+  --accent-green:  #00e5a0;
+  --accent-amber:  #f5a623;
+  --accent-red:    #ff4d4d;
+
+  --stage-0: #3b4a6b;   /* Order Created */
+  --stage-1: #1a5fb4;   /* Delivery Created */
+  --stage-2: #0891b2;   /* Goods Issued */
+  --stage-3: #7c3aed;   /* Invoice Generated */
+  --stage-4: #059669;   /* Payment Received */
+
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --shadow-card: 0 2px 20px rgba(0,0,0,0.4), 0 0 0 1px var(--border);
+  --shadow-glow: 0 0 24px rgba(28,110,243,0.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(28,110,243,0.08) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.015) 39px, rgba(255,255,255,0.015) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.015) 39px, rgba(255,255,255,0.015) 40px);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 3px; }
+
+/* Focus */
+*:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+
+/* Transitions */
+a, button { transition: all 0.18s ease; }
+
+/* Typography */
+h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; }
+h3 { font-size: 1rem;    font-weight: 600; }
+
+/* Utility */
+.mono { font-family: var(--font-mono); }
+.text-muted { color: var(--text-secondary); }
+.text-xs { font-size: 0.75rem; }
